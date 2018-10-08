@@ -1,0 +1,48 @@
+@import "cards";
+@import "aside";
+
+.d-flex {
+    display:flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+html, body, .app {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+//height: calc(100% - 18px);
+
+main, .content {
+    flex-grow: 1;    
+}
+
+aside, .content {
+    overflow-y: auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.filter-bar { 
+    background-color: #262626;
+    a {
+        text-decoration: none;
+        color: ghostwhite;
+    }
+}
+
+
+
+
+
+
+
+
