@@ -1,6 +1,12 @@
 .card {
     min-width: 200px;
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+
 //    border: 1px solid #ccc;
     flex: 1 1 200px; //kad cards mazetu ir didetu kai tampomebrowserio langa
     margin: 10px; //tarpai tarp cards
@@ -14,10 +20,13 @@
 //pvz kaip veikia getbem.com/naming/ -- naming issue :) budas kaip konstruoti klases
     &__image {
         max-width: 100%;
+        
     }
 
     &__content {
         text-align: left;
+//        flex-grow: 1; -- sitas arba justify-content: space-between; prie .card klases auksciau
+        margin: auto 0;
     }
    
 }

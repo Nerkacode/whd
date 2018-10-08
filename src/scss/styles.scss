@@ -39,6 +39,32 @@ aside, .content {
     }
 }
 
+@media (max-width: 600px) {
+    .app {
+    flex-direction: column;
+        aside {
+        overflow-y: visible;
+        } 
+    }
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    top: 0px;
+    margin-bottom: 0;
+    transition: top 0.5s;
+
+    &:hover {
+        position: relative;
+        top: -10px;
+    //    margin-bottom: 10px;
+    }
+    
+}
+
 
 
 

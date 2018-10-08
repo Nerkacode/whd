@@ -16,12 +16,13 @@ aside {
     }
 }
 
+
+
 label input {
     display: none;
 }
 
 input[type=checkbox] + .circle--dot {
-    content: "";
     width: 8px;
     height: 8px;    
     border-radius: 50%;
@@ -29,8 +30,10 @@ input[type=checkbox] + .circle--dot {
     display: inline-block;
 }
 
+// input:checked ~ &::before -- cia tipo su tilde ~ :)
+// posicionavimui naudoti top, left ir pan. ne padding ar margin
+
   input[type=checkbox]:checked + .circle--dot {
-    content: "";
     width: 0px;
     height: 0px;    
     border-radius: 50%;
