@@ -1,5 +1,8 @@
 @import "cards";
 @import "aside";
+@import "btn";
+@import "tags";
+@import "page";
 
 .d-flex {
     display:flex;
@@ -31,39 +34,22 @@ aside, .content {
     padding-left: 10px;
 }
 
-.filter-bar { 
-    background-color: #262626;
-    a {
-        text-decoration: none;
-        color: ghostwhite;
-    }
-}
-
 @media (max-width: 600px) {
     .app {
     flex-direction: column;
         aside {
         overflow-y: visible;
+            .aside--info {
+            margin-bottom: 20px;
+            }
+            .aside--filterby {
+            display: none;
+            }
         } 
     }
 }
 
-.btn {
-    padding: 10px;
-    border: none;
-    width: 100%;
-    text-transform: uppercase;
-    top: 0px;
-    margin-bottom: 0;
-    transition: top 0.5s;
 
-    &:hover {
-        position: relative;
-        top: -10px;
-    //    margin-bottom: 10px;
-    }
-    
-}
 
 
 

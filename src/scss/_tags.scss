@@ -1,0 +1,55 @@
+.tags-component {
+    display: flex;
+    align-items: center;
+    
+    &--icons {
+        padding: 0 0.5rem 0 2rem;
+        font-size: 0.8rem;
+    }
+    
+    &--tags {
+        flex-grow: 1;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            
+            li {
+            margin: 2px 5px;
+            padding: 1px 5px;
+            background: #000;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 0.6rem;
+            letter-spacing: 2px;  
+            text-transform: uppercase;                          
+            }
+
+            a, span {
+                display: inline-block;
+                vertical-align: text-top;
+            }
+
+            a {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: url("../../src/images/close.svg") 0 0 no-repeat;
+                background-size: 11px;
+            }
+        }
+    }
+
+    &--clear {
+        padding: 0 2rem;
+
+        a {
+            text-decoration: none;
+            font-size: 0.6rem;
+            color: #000;
+            letter-spacing: 1px;
+        }
+    }   
+}

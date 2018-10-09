@@ -16,8 +16,6 @@ aside {
     }
 }
 
-
-
 label input {
     display: none;
 }
@@ -33,7 +31,7 @@ input[type=checkbox] + .circle--dot {
 // input:checked ~ &::before -- cia tipo su tilde ~ :)
 // posicionavimui naudoti top, left ir pan. ne padding ar margin
 
-  input[type=checkbox]:checked + .circle--dot {
+input[type=checkbox]:checked + .circle--dot {
     width: 0px;
     height: 0px;    
     border-radius: 50%;
@@ -62,12 +60,17 @@ input[type=checkbox] + .circle--dot {
             text-decoration: underline;
         }
     } 
-    span {
-        content: "";
+    span {        
         border: 2px solid ghostwhite;  
         border-radius: 50%;
         margin: 3px;   
         display: inline-block;
+    }
+}
+
+@media (min-width: 600px) {
+    .aside--info ul li:nth-child(5), li:nth-child(4) {
+        display: none;
     }
 }
 
@@ -78,6 +81,5 @@ input[type=checkbox] + .circle--dot {
     }
     li {
         margin: 8px 0 8px 0;
-    }
-    
+    }    
 }

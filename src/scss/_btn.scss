@@ -1,0 +1,21 @@
+.btn {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    top: 0px;
+    margin-bottom: 0;
+    transition: top 0.5s;
+    filter: grayscale(0%); 
+    transition: filter 0.3s ease; 
+
+    &:hover {
+        position: relative;
+        top: -10px;
+        filter: grayscale(55%);
+
+    //    margin-bottom: 10px;
+    }
+    
+}
+
